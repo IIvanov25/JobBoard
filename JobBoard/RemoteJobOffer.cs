@@ -19,14 +19,14 @@ namespace JobBoard
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"Job Title: {JobTitle}");
             sb.AppendLine($"Company: {Company}");
-            sb.AppendLine($"Salary: {Salary:f2} BGN");
+            sb.AppendLine($"Salary: {Salary:f3} BGN");
             if (FullyRemote == true)
             {
                 sb.AppendLine($"yes");
             }
             else
             {
-                sb.AppendLine($"no");
+                sb.AppendLine($"noooo");
             }
             return sb.ToString();
         }
