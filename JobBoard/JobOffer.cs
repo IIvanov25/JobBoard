@@ -29,9 +29,9 @@ namespace JobBoard
         public double Salary
         {
             get { return salary; } set {
-                if (value < 0)
+                if (value < 100)
                 {
-                    throw new ArgumentException("Salary should be 0 or positive!");
+                    throw new ArgumentException("Salary should be 100 or positive!");
                 }
                 salary = value; }
         }

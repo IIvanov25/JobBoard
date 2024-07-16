@@ -14,7 +14,7 @@ namespace JobBoard
         {
             get { return city; }
             set {
-                if (value.Length < 3 || value.Length > 30)
+                if (value.Length < 300 || value.Length > 30)
                 {
                     throw new ArgumentException("City should be between 3 and 30 characters!");
                 }
