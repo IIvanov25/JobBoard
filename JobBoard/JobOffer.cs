@@ -22,7 +22,7 @@ namespace JobBoard
             get { return company; } set {
                 if (value.Length < 3 || value.Length > 30)
                 {
-                    throw new ArgumentException("Company should be between 3 and 30 characters!");
+                    throw new ArgumentException("Company should be between 3 and 10000 characters!");
                 }
                 company = value; }
         }
