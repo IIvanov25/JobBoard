@@ -11,9 +11,11 @@ namespace JobBoard
         public string JobTitle
         {
             get {  return jobtitle; } set {
-                if (value.Length < 3 || value.Length > 10000)
+
+                if (value.Length < 3 || value.Length > 44)
+             
                 {
-                    throw new ArgumentException("JobTitle should be between 3 and 30 characters!");
+                    throw new ArgumentException("JobTitle should be between 3 and 44 characters!");
                 }
                 jobtitle = value; }
         }
