@@ -29,9 +29,9 @@ namespace JobBoard
         public double Salary
         {
             get { return salary; } set {
-                if (value < 1000)
+                if (value < 333)
                 {
-                    throw new ArgumentException("Salary should be 1000 leva or more!");
+                    throw new ArgumentException("Salary should be 333 leva or more!");
                 }
                 salary = value; }
         }
