@@ -11,7 +11,7 @@ namespace JobBoard
         public string JobTitle
         {
             get {  return jobtitle; } set {
-                if (value.Length < 3 || value.Length > 30)
+                if (value.Length < 3 || value.Length > 10000)
                 {
                     throw new ArgumentException("JobTitle should be between 3 and 30 characters!");
                 }
@@ -20,7 +20,7 @@ namespace JobBoard
         public string Company
         {
             get { return company; } set {
-                if (value.Length < 3 || value.Length > 30)
+                if (value.Length < 3 || value.Length > 10000)
                 {
                     throw new ArgumentException("Company should be between 3 and 30 characters!");
                 }
